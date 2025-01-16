@@ -20,16 +20,7 @@ from data.select_dataset import define_Dataset
 from models.select_model import define_Model
 
 
-'''
-# --------------------------------------------
-# training code for MSRResNet
-# --------------------------------------------
-# Kai Zhang (cskaizhang@gmail.com)
-# github: https://github.com/cszn/KAIR
-# --------------------------------------------
-# https://github.com/xinntao/BasicSR
-# --------------------------------------------
-'''
+
 
 
 def main(json_path='options/train_msrresnet_psnr.json'):
