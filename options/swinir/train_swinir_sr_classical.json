@@ -1,5 +1,5 @@
 {
-  "task": "swinir_sr_classical_patch64_x4"     //  classical image sr for x2/x3/x4/x8. root/task/images-models-options
+  "task": "offnet_sr_classical_patch64_x4"     //  classical image sr for x2/x3/x4/x8. root/task/images-models-options
   , "model": "plain" // "plain" | "plain2" if two inputs
   , "gpu_ids": [0,1]
   , "dist": true
@@ -26,7 +26,7 @@
 
       , "dataloader_shuffle": true
       , "dataloader_num_workers": 4
-      , "dataloader_batch_size": 8      // batch size 1 | 16 | 32 | 48 | 64 | 128. Total batch size =4x8=32 in SwinIR
+      , "dataloader_batch_size": 8     
     }
     , "test": {
       "name": "test_dataset"            // just name
@@ -41,7 +41,7 @@
     "net_type": "offnet" 
     , "upscale": 4                      // 2 | 3  | 4 | 8
     , "in_chans": 3 
-    , "img_size": 64                    // For fair comparison, LR patch size is set to 48 or 64 when compared with RCAN or RRDB.
+    , "img_size": 64                    
     , "window_size": 8  
     , "img_range": 1.0 
     , "depths": [6, 6, 6, 6, 6, 6] 
