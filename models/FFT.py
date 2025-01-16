@@ -243,7 +243,7 @@ class SpectralTransform(nn.Module):
         )
         self.conv2 = torch.nn.Conv2d(embed_dim // scale, embed_dim, 1, 1, 0)
 
-        if func == 'Hardmard':
+        if func == 'Hadamard':
             self.fu = FourierUnit_H(embed_dim//scale,
                                     if_sparse=True,
                                     groups=2,
@@ -629,7 +629,7 @@ class FTB(nn.Module):
                  embed_dim=180,
                  mode='wf',  # wf: wave and fourier      w:wave only      f:fourier only
                  func0='Wave_en',
-                 func1='Hardmard', 
+                 func1='Hadamard', 
                  reduce=1, 
                  layerscale_value=1e-4,
                  mlp_ratio=2, 
