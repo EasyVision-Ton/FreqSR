@@ -1,8 +1,3 @@
-# -----------------------------------------------------------------------------------
-# SwinIR: Image Restoration Using Swin Transformer, https://arxiv.org/abs/2108.10257
-# Originally Written by Ze Liu, Modified by Jingyun Liang.
-# -----------------------------------------------------------------------------------
-
 import math
 import torch
 import torch.nn as nn
@@ -557,7 +552,7 @@ class BasicLayer(nn.Module):
                              ffn=ffn,
                              if_print=if_print)
             )   
-            elif global_mixer == 'ftb':  # Fourier transformer block   --- 2024-06-14
+            elif global_mixer == 'ftb':  # Fourier transformer block
                 self.blocks.append(
                     FTB(layer_index=level,
                         embed_dim=dim, 
@@ -567,7 +562,7 @@ class BasicLayer(nn.Module):
                         func0=FAB_func[1],
                         # func0='Wave',
                         func1=FAB_func[2],
-                        # func1='Hardmard',
+                        # func1='Hadamard',
                         reduce=1,
                         mlp_ratio=mlp_ratio,
                         drop=drop,
