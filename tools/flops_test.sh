@@ -2,4 +2,4 @@
 
 
 PYTHONPATH="$(dirname $0)/..":PYTHONPATH \
-python $(dirname $0)/../models/network_swinir.py
+python $(dirname $0)/../models/network_offnet.py
