@@ -5,4 +5,6 @@ This is the official PyTorch implement of the paper: OFFNet: Omni-Frequency Filt
 Clone this github repo:
 
 ```
+https://github.com/EasyVision-Ton/OFFNet.git
+cd OFFNet
 ```
