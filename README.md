@@ -1,4 +1,5 @@
-
+## FreqSR (CVIU-2026)
+This is the official repository for the [paper](https://www.sciencedirect.com/science/article/abs/pii/S1077314226003498) FreqSR.
 
 ## Train
 We train our model on the [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/) dataset.
