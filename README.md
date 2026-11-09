@@ -11,9 +11,7 @@ The benchmarks include Set5, Set14, B100, Urban100, and Manga109 (the full datas
 This work is based on [KAIR](https://github.com/cszn/KAIR), which is an awesome project.
 
 ## Citation
-If you use this work, please cite:
-BibTeX:
-
+If you use this work, please cite (BibTeX):
 ```bibtex
 @article{tang2026freqsr,
   title={FreqSR: Frequency-aware network for Single-Image Super-Resolution},
